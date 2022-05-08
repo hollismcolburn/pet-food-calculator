@@ -12,7 +12,11 @@
 
     <style>
         body {
-            background-image: url(/Users/holliscolburn/Documents/pet-food-calculator/img/okeykat-w6elADh_jww-unsplash.jpg);
+            background-image: url("/Users/holliscolburn/Documents/pet-food-calculator/img/okeykat-w6elADh_jww-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
         }
         
         .page-caption {
@@ -24,13 +28,51 @@
             width: 100%;
             text-align: center;
             color: rgba(0, 0, 0);
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.8);
+        }
+        
+        #petFoodInfo {
+            margin: auto;
+            padding: 20px 0;
+            opacity: 80%;
         }
     </style>
 
     <div class="page-caption">
         <h1>Pet Food Calculator</h1>
         <h5>Enter your pet's information to create a personalized feeding plan</h5>
+    </div>
+
+    <div class="container-lg">
+        <div class="col-md-6 offset-md-3">
+            <div id="petFoodInfo" class="card" style="width: 100%;">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Your Pet's Info</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="petNameInput" class="form-label">Pet's name:</label>
+                            <input type="text" class="form-control" id="petNameInput" placeholder="Hoagie">
+                        </div>
+                        <label for="petSpeciesSelect" class="form-label">Species:</label>
+                        <select class="form-select" id="petSpeciesSelect">
+                            <option selected>Choose your pet's species</option>
+                            <option value="1">Cat</option>
+                            <option value="2">Dog</option>
+                          </select>
+                        <div class="mb-3">
+                            <label for="calorieGoalInput" class="form-label">Calorie goal:</label>
+                            <input type="number" class="form-control" id="calorieGoalInput" placeholder="225">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mealsPerDayInput" class="form-label">Meals per day:</label>
+                            <input type="number" class="form-control" id="mealsPerDayInput" placeholder="2">
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Next</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
