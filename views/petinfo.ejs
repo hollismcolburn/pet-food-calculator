@@ -37,6 +37,13 @@
             margin-bottom: 5%;
             background: rgba(255, 255, 255, 0.9);
         }
+        
+        h3 {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     </style>
 
     <div class="page-caption">
@@ -47,32 +54,63 @@
     <div class="container-lg">
         <div class="col-md-6 offset-md-3">
             <div class="card" style="width: 100%; padding: 20px;">
-                <div class="card-body">
-                    <h4 class="card-title text-center">Your Pet's Info</h4>
+                <form>
+                    <h3>Your Pet's Info</h3>
+                    <div class="mb-3">
+                        <label for="petNameInput" class="form-label">Pet's name:</label>
+                        <input type="text" class="form-control" id="petNameInput" placeholder="Hoagie">
+                    </div>
+                    <label for="petSpeciesSelect" class="form-label">Species:</label>
+                    <select class="form-select" id="petSpeciesSelect">
+                                        <option selected>Choose your pet's species</option>
+                                        <option value="1">Cat</option>
+                                        <option value="2">Dog</option>
+                                      </select>
+                    <div class="mb-3">
+                        <label for="calorieGoalInput" class="form-label">Calorie goal:</label>
+                        <input type="number" class="form-control" id="calorieGoalInput" placeholder="225">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mealsPerDayInput" class="form-label">Meals per day:</label>
+                        <input type="number" class="form-control" id="mealsPerDayInput" placeholder="2">
+                    </div>
+
+                    <h3>Dry Food Info</h3>
+
+                    <div class="mb-3">
+                        <label for="dryFoodNameInput" class="form-label">Food name:</label>
+                        <input type="text" class="form-control" id="dryFoodNameInput" placeholder="Hill's Perfect Weight">
+                    </div>
+                    <div class="mb-3">
+                        <label for="caloriesPerCupInput" class="form-label">Calories per cup:</label>
+                        <input type="number" class="form-control" id="caloriesPerCupInput" placeholder="300">
+                    </div>
+
+                    <h3>Wet Food Info</h3>
                     <form>
                         <div class="mb-3">
-                            <label for="petNameInput" class="form-label">Pet's name:</label>
-                            <input type="text" class="form-control" id="petNameInput" placeholder="Hoagie">
-                        </div>
-                        <label for="petSpeciesSelect" class="form-label">Species:</label>
-                        <select class="form-select" id="petSpeciesSelect">
-                            <option selected>Choose your pet's species</option>
-                            <option value="1">Cat</option>
-                            <option value="2">Dog</option>
-                          </select>
-                        <div class="mb-3">
-                            <label for="calorieGoalInput" class="form-label">Calorie goal:</label>
-                            <input type="number" class="form-control" id="calorieGoalInput" placeholder="225">
+                            <label for="wetFoodNameInput" class="form-label">Food name:</label>
+                            <input type="text" class="form-control" id="wetFoodNameInput" placeholder="Hill's Perfect Weight">
                         </div>
                         <div class="mb-3">
-                            <label for="mealsPerDayInput" class="form-label">Meals per day:</label>
-                            <input type="number" class="form-control" id="mealsPerDayInput" placeholder="2">
+                            <label for="caloriesPerCanInput" class="form-label">Calories per can:</label>
+                            <input type="number" class="form-control" id="caloriesPerCanInput" placeholder="62">
                         </div>
-                        <button id="petInfoSubmit" type="submit" class="btn btn-secondary" href="/dryfood.html">Next</button>
+                        <div class="mb-3">
+                            <label for="cansPerDayInput" class="form-label">Cans per day:</label>
+                            <input type="number" class="form-control" id="cansPerDayInput" placeholder="1">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-secondary" href="/feedingplan.html">Calculate</button>
+                        </div>
+
                     </form>
-                </div>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
 
     <script src="main.js"></script>
