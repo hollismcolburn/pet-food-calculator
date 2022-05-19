@@ -6,7 +6,7 @@ const Pet = require('./models/pet');
 const app = express();
 
 // connect to mongodb
-const dbURI = 'mongodb+srv://hollis:XyMZL4ZtAkSlBrbp@pet-food-calculator.qwhze.mongodb.net/?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://' + user + ':' + password + '@pet-food-calculator.qwhze.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err));
