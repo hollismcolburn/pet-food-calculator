@@ -1,26 +1,27 @@
 {
-  "name": "pet-food-calculator",
-  "version": "1.0.0",
-  "description": "Calculate a personalized feeding plan for your pet",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hollismcolburn/pet-food-calculator.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hollismcolburn/pet-food-calculator/issues"
-  },
-  "homepage": "https://github.com/hollismcolburn/pet-food-calculator#readme",
-  "dependencies": {
-    "body-parser": "^1.20.0",
-    "cookie-parser": "^1.4.6",
-    "ejs": "^3.1.8",
-    "express": "^4.18.1",
-    "multer": "^1.4.4"
-  }
+    "name": "pet-food-calculator",
+    "version": "1.0.0",
+    "description": "Calculate a personalized feeding plan for your pet",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hollismcolburn/pet-food-calculator.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hollismcolburn/pet-food-calculator/issues"
+    },
+    "homepage": "https://github.com/hollismcolburn/pet-food-calculator#readme",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "cookie-parser": "^1.4.6",
+        "ejs": "^3.1.8",
+        "express": "^4.18.1",
+        "mongoose": "^6.3.3",
+        "multer": "^1.4.4"
+    }
 }
