@@ -43,25 +43,25 @@ app.get('/petinfo', (req, res) => {
 //         });
 // })
 
-// app.get('/feedingplan', (req, res) => {
-//     res.render('feedingplan');
-// });
-
-app.get('/feedingplan', function(req, res) {
-    var exampleInfo = {
-        petName: 'Hoagie',
-        petSpecies: 'Cat',
-        calorieGoal: 225,
-        mealsPerDay: 2,
-        dryFoodName: "Hill's Perfect Weight",
-        caloriesPerCup: 300,
-        wetFoodName: "Hill's Perfect Weight",
-        caloriesPerCan: 64,
-        cansPerDay: 1
-    }
-
-    res.render('feedingplan', { exampleInfo });
+app.get('/feedingplan', (req, res) => {
+    res.render('feedingplan');
 });
+
+// app.get('/feedingplan', function(req, res) { 
+//     var exampleInfo = {
+//         petName: 'Hoagie',
+//         petSpecies: 'Cat',
+//         calorieGoal: 225,
+//         mealsPerDay: 2,
+//         dryFoodName: "Hill's Perfect Weight",
+//         caloriesPerCup: 300,
+//         wetFoodName: "Hill's Perfect Weight",
+//         caloriesPerCan: 64,
+//         cansPerDay: 1
+//     }
+
+// res.render('feedingplan', { exampleInfo });
+// });
 
 // 404 page
 app.use((req, res) => {
